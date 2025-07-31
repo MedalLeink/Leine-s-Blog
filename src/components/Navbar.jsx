@@ -10,7 +10,11 @@ const Navbar = () => {
        {Path: "/contact", link: "Contact"} 
     ]
   return (
-    <div>Navbar</div>
+    <head>
+        <nav>
+            <a href="/" className='text-xl font-bold text-white'>Leine's <span>Blog</span></a>
+        </nav>
+    </head>
   )
 }
 
