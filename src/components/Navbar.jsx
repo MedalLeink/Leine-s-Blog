@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 
 // react icons
-import { FaFacebook } from "react-icons/fa6";
+import { FaFacebook, FaDribbble, FaTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   const navItems = [
@@ -29,8 +29,10 @@ const Navbar = () => {
         </ul>
 
         {/* menu icons */}
-        <div className="">
-            <a href="/">FaFacebook</a>
+        <div className="text-white lg:flex gap-4 items-center">
+            <a href="/" className="hover:text-amber-400"><FaFacebook/></a>
+            <a href="/" className="hover:text-amber-400"><FaDribbble/></a>
+            <a href="/" className="hover:text-amber-400"><FaTwitter/></a>
             </div>
       </nav>
     </header>
