@@ -33,6 +33,7 @@ const Navbar = () => {
             <a href="/" className="hover:text-amber-400"><FaFacebook/></a>
             <a href="/" className="hover:text-amber-400"><FaDribbble/></a>
             <a href="/" className="hover:text-amber-400"><FaTwitter/></a>
+            <button className="bg-indigo-600 px-6text-">Login</button>
             </div>
       </nav>
     </header>
