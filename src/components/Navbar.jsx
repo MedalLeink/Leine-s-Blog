@@ -33,7 +33,7 @@ const Navbar = () => {
             <a href="/" className="hover:text-amber-400"><FaFacebook/></a>
             <a href="/" className="hover:text-amber-400"><FaDribbble/></a>
             <a href="/" className="hover:text-amber-400"><FaTwitter/></a>
-            <button className="bg-indigo-600 px-6text-">Login</button>
+            <button className="bg-indigo-600 px-6 py-2 font-medium rounded hover:bg-white">Login</button>
             </div>
       </nav>
     </header>
