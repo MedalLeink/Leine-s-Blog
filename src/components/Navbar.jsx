@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 
 // react icons
-import { FaFacebook, FaDribbble, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaDribbble, FaTwitter, FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const navItems = [
@@ -13,7 +13,7 @@ const Navbar = () => {
     { Path: "/contact", link: "Contact" },
   ];
   return (
-    <header className="bg-black">
+    <header className="bg-black text-white">
       <nav className="px-4 py-4">
         <a href="/" className="text-xl font-bold text-indigo-600">
           Leine's<span className="text-amber-400">Blog</span>
@@ -33,10 +33,16 @@ const Navbar = () => {
             <a href="/" className="hover:text-amber-400"><FaFacebook/></a>
             <a href="/" className="hover:text-amber-400"><FaDribbble/></a>
             <a href="/" className="hover:text-amber-400"><FaTwitter/></a>
-            <button className="bg-indigo-600 px-6 py-2 font-medium rounded hover:bg-white">Login</button>
+            <button className="bg-indigo-600 px-6 py-2 font-medium rounded hover:bg-white hover:text-indigo-600 transition-all duration-200 ease-in">Login</button>
             </div>
+
+            {/* mobile menu btn - display mobile screen */}
+            <button><FaBars className=""/></button>
       </nav>
     </header>
+
+
+
   );
 };
 
