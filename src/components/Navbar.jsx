@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
 
             {/* mobile menu btn - display mobile screen */}
-            <button><FaBars className="w-5 h-5"/></button>
+            <button className="cursor-pointer"><FaBars className="w-5 h-5"/></button>
       </nav>
     </header>
 
