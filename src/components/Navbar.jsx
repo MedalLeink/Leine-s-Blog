@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
   return (
     <header className="bg-black text-white">
-      <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between">
+      <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between items-center">
         <a href="/" className="text-xl font-bold text-indigo-600">
           Leine's<span className="text-amber-400">Blog</span>
         </a>
@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
 
             {/* mobile menu btn - display mobile screen */}
-            <button className="cursor-pointer"><FaBars className="w-5 h-5"/></button>
+            <button className="cursor-pointer"><FaBars className="w-5 h-5 md:hidden"/></button>
       </nav>
     </header>
 
