@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
   return (
     <header className="bg-black text-white">
-      <nav className="px-4 py-4">
+      <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between">
         <a href="/" className="text-xl font-bold text-indigo-600">
           Leine's<span className="text-amber-400">Blog</span>
         </a>
