@@ -20,7 +20,7 @@ const Navbar = () => {
         </a>
 
         {/* nav items */}
-        <ul className="md:flex gap-12 text-lg">
+        <ul className="hidden md:flex gap-12 text-lg">
           {navItems.map(({ path, link }) => (
             <li className="text-white" key={path}>
               <NavLink to={path}>{link}</NavLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </ul>
 
         {/* menu icons */}
-        <div className="text-white lg:flex gap-4 items-center">
+        <div className="hidden text-white lg:flex gap-4 items-center">
             <a href="/" className="hover:text-amber-400"><FaFacebook/></a>
             <a href="/" className="hover:text-amber-400"><FaDribbble/></a>
             <a href="/" className="hover:text-amber-400"><FaTwitter/></a>
