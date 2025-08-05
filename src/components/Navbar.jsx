@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
 
             {/* mobile menu btn - display mobile screen */}
-            <button className="cursor-pointer"><FaBars className="w-5 h-5 md:hidden"/></button>
+            <button onClick={toggleMenu} className="cursor-pointer"><FaBars className="w-5 h-5 md:hidden"/></button>
       </nav>
     </header>
 
