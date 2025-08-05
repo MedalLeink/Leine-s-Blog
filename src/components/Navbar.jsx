@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router";
 
 // react icons
-import { FaFacebook, FaDribbble, FaTwitter, FaBars } from "react-icons/fa6";
+import { FaFacebook, FaDribbble, FaTwitter, FaBars, FaXmark } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +42,13 @@ const Navbar = () => {
             </div>
 
             {/* mobile menu btn - display mobile screen */}
-            <button onClick={toggleMenu} className="cursor-pointer"><FaBars className="w-5 h-5 md:hidden"/></button>
+            <button onClick={toggleMenu} className="cursor-pointer">
+              <FaBars className="w-5 h-5 md:hidden"/>
+              {
+                isMenuOpen ? <FaXmark/> : <FaBars className="w-5 h-5"/>
+              }
+              
+              </button>
       </nav>
     </header>
 
