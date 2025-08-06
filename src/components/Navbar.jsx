@@ -31,7 +31,7 @@ const Navbar = () => {
         </a>
 
         {/* nav items */}
-        <ul className="md:flex gap-12 text-lg">
+        <ul className="md:flex gap-12 text-lg hidden">
           {navItems.map(({ path, link }) => (
             <li className="text-white" key={path}>
               <NavLink to={path}>{link}</NavLink>
@@ -61,6 +61,18 @@ const Navbar = () => {
           {isMenuOpen ? <FaXmark /> : <FaBars className="w-5 h-5" />}
         </button>
       </nav>
+
+      {/* Menu items only for mobile */}
+      <div>
+        <ul className="md:hidden gap-12 text-lg block space-y-4">
+          {navItems.map(({ path, link }) => (
+            <li className="text-white" key={path}>
+              <NavLink to={path}>{link}</NavLink>
+            </li>
+          ))}
+        </ul>
+
+      </div>
     </header>
   );
 };
