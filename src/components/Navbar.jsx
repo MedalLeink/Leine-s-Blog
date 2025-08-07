@@ -40,7 +40,7 @@ const Navbar = () => {
         </ul>
 
         {/* menu icons */}
-        <div className="text-white lg:flex gap-4 items-center">
+        <div className="hidden text-white lg:flex gap-4 items-center">
           <a href="/" className="hover:text-amber-400">
             <FaFacebook />
           </a>
@@ -57,16 +57,16 @@ const Navbar = () => {
 
         {/* mobile menu btn - display mobile screen */}
         <button onClick={toggleMenu} className="cursor-pointer">
-          <FaBars className="w-5 h-5 md:hidden" />
+          {/* <FaBars className="w-5 h-5 md:hidden" /> */}
           {isMenuOpen ? <FaXmark /> : <FaBars className="w-5 h-5" />}
         </button>
       </nav>
 
       {/* Menu items only for mobile */}
       <div>
-        <ul className="md:hidden gap-12 text-lg block space-y-4">
+        <ul className={`md:hidden gap-12 text-lg block space-y-4 px-4 py-6 mt-14 bg-white ${isMenuOpen ? "fixed top-0 left-0 w-full transition-all ease out duration-150" :"hidden"}`}>
           {navItems.map(({ path, link }) => (
-            <li className="text-white" key={path}>
+            <li className="text-black" key={path}>
               <NavLink to={path}>{link}</NavLink>
             </li>
           ))}
