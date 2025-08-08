@@ -34,7 +34,13 @@ const Navbar = () => {
         <ul className="md:flex gap-12 text-lg">
           {navItems.map(({ path, link }) => (
             <li className="text-white" key={path}>
-              <NavLink to={path}>{link}</NavLink>
+              <NavLink className={({ isActive, isPending }) =>
+                  isActive
+                    ? "active"
+                    : isPending
+                      ? "pending"
+                      : ""
+                } to={path}>{link}</NavLink>
             </li>
           ))}
         </ul>
